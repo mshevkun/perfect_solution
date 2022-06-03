@@ -1,0 +1,271 @@
+:root {
+  --primary: #5f2dee;
+  --secondary: #b882fc;
+  --text: #6c6a72;
+  --heading: #1d1729;
+  --light: #e4e0ee;
+  --footer-text: #B0A9C0;
+  --background-color: #f4f2f9;
+  --primary-font: Catamaran;
+  --font-size: 16px;
+  --line-height: 1.9;
+  --letter-spacing: 0px;
+}
+
+.container {
+  max-width: 1290px;
+}
+
+body {
+  color: var(--text);
+  font-family: var(--primary-font);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-size: var(--font-size);
+}
+
+a:hover {
+  color: inherit;
+}
+
+.padding-none {
+  padding: 0 !important;
+}
+
+li {
+  list-style-type: none
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.header-consult-info__icon, .footer-contacts__list-item-icon {
+  color: var(--secondary);
+  margin-right: 12px;
+  min-width: 16px;
+}
+
+.header__logo {
+  background-color: var(--heading);
+}
+
+.header-consult-info__info {
+  margin-right: 30px;
+}
+
+.header__logo img {
+  max-height: 41px;
+}
+
+.header-consult-info__title {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  margin-bottom: 0;
+}
+
+.header__social-networks {
+  background-color: var(--background-color)
+}
+
+.header-social-network, .footer-social-network__item {
+  height: 42px;
+  width: 42px;
+  color: #15101e;
+}
+
+.header-social-network:hover {
+  color: var(--secondary)
+}
+
+.footer-social-network__item {
+  transition: all .5s;
+}
+
+.header-bottom {
+  min-height: 70px;
+}
+
+.header-bottom-nav__list {
+  width: 100%;
+}
+
+.header-bottom-nav__list li {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header-bottom-nav__list li a:hover {
+  color: var(--primary);
+}
+
+.header-consult {
+  padding-left: 35px !important;
+}
+
+.header-consult-info {
+  border-bottom: 1px solid var(--light);
+}
+
+.header-bottom-nav, .header-bottom, .header-consult-info {
+  padding-left: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  margin-right: 12px;
+}
+
+.header-bottom__icon img {
+  max-width: 26px;
+}
+
+.header-bottom__icon {
+  background-color: var(--primary);
+}
+
+.footer-social-network {
+  max-width: 238px;
+}
+
+.footer-social-network-item-wrapper {
+  background-color: #15101E;
+}
+
+.footer-social-network__item i {
+  color: #AEA8B9;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+.header-bottom__content_call {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.header-bottom__content_num {
+  color: #1d1729;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.footer-logo__image {
+  max-width: 164px;
+}
+
+.footer-logo {
+  padding-bottom: 30px;
+}
+
+.footer-text {
+  max-width: 238px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #1D1729;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+  background-image: url('../img/lines-footer.png');
+  color: var(--footer-text);
+}
+
+.footer-col-hours-wrapper__time {
+  color: #181818;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col-hours-wrapper__week-day {
+  font-size: 14px;
+}
+
+.footer-col-hours-wrapper__time {
+  min-width: 135px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer-col-hours-wrapper {
+  padding: 4px 0;
+}
+
+.footer-title-wrapper {
+  position: relative;
+}
+
+.footer__title::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  width: 16px;
+  background-color: var(--primary);
+}
