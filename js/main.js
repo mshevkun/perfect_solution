@@ -16,3 +16,29 @@ function stopRotate(){
   const cardItem = this.querySelector('.card-item');
   cardItem.style.transform = 'rotate(0)';
 }
+
+// owlCarousel
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    autoplay:false,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
