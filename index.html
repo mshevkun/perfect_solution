@@ -101,12 +101,11 @@
             <div class="row header-bottom">
               <nav class="header-bottom-nav col-9 d-flex">
                 <ul class="header-bottom-nav__list d-flex align-items-center">
-                  <li><a href="#" class="active">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#customers">Customers</a></li>
+                  <li><a href="contact/">Contact Us</a></li>
                 </ul>
               </nav>
               <div
@@ -226,7 +225,7 @@
       </main>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
           <div class="col-6 about__images">
@@ -323,7 +322,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="row services__title-wrapper">
           <div class="col-6">
@@ -337,16 +336,14 @@
           </div>
           <div class="col-6">
             <p class="services__text">
-              We offers a full-cycle software development services that meet
-              varied business requirements from IT strategy consulting to the
-              end-to-end development of scalable solutions.
+              We offer a number of services to our Clients. We provide On-site Troubleshooting, Maintenance and Repair, Remote Administration, Remote off-site Backups and More! For Networking, Training, Consultation, Website design, and programming, please use the menu links above.
             </p>
           </div>
         </div>
         <div class="row services__cards">
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/web_studio/" class="card-layer"></a>
               <img
                 src="./img/web-studio.png"
                 class="services__card-image"
@@ -364,7 +361,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/software_studio/" class="card-layer"></a>
               <img
                 src="./img/software-studio.png"
                 class="services__card-image"
@@ -382,7 +379,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/remote_admin_service/" class="card-layer"></a>
               <img
                 src="./img/administration-service.png"
                 class="services__card-image"
@@ -400,7 +397,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/remote_backup_service/" class="card-layer"></a>
               <img
                 src="./img/cloud-system-with-data-protection.jpg"
                 class="services__card-image"
@@ -420,7 +417,7 @@
         <div class="row services-cards">
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/onsite_service/" class="card-layer"></a>
               <img
                 src="./img/man-is-writing-e-mail.jpg"
                 class="services__card-image"
@@ -438,7 +435,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/contract_priority_service/" class="card-layer"></a>
               <img
                 src="./img/hands-shaking.jpg"
                 class="services__card-image"
@@ -456,7 +453,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/repair&upgrades/" class="card-layer"></a>
               <img
                 src="./img/technician-repairing-technology.jpg"
                 class="services__card-image"
@@ -474,7 +471,7 @@
           </div>
           <div class="col-3 services__card card-block">
             <div class="card-item">
-              <div class="card-layer"></div>
+              <a href="services/computer_systems/" class="card-layer"></a>
               <img
                 src="./img/service1-03.jpg"
                 class="services__card-image"
@@ -538,7 +535,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="customers">
       <h3 class="sub-title reviews__sub-title">
         <span class="underlined"></span>
         Client Testimonials
@@ -634,8 +631,10 @@
       <div class="result-num__geometry"></div>
       <div class="row container result-num__content">
         <div class="col-5">
-          <div class="result-num__contact-button">
-            <i class="fa fa-play" aria-hidden="true"></i>
+          <div
+            class="result-num__contact-button header-bottom__icon icon-wrapper"
+          >
+            <img src="img/phone-message.png" alt="Сall icon" />
           </div>
           <h2 class="result-num__sub-title">Do You Need a Meeting?</h2>
           <h3 class="title result-num__title">
@@ -643,11 +642,20 @@
           </h3>
         </div>
         <div class="col-3"></div>
-        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="result-num__customers-block result-num__block">
+            <span class="result-num__number number1" data-max="374">0</span>
+            <p class="result-num__text">We have satisfied customers</p>
+          </div>
+          <div class="result-num__projects-block result-num__block">
+            <span class="result-num__number number2" data-max="468">0</span>
+            <p class="result-num__text">Projects has been completed</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <footer id="footer">
       <div class="container footer">
         <div class="row">
           <div class="col-3">
@@ -716,13 +724,13 @@
                 <a class="hover-underline-animation" href="#">Our Projects</a>
               </li>
               <li class="footer__list_item">
-                <a class="hover-underline-animation" href="#">Contact</a>
+                <a class="hover-underline-animation" href="contact/">Contact Us</a>
               </li>
             </ul>
           </div>
           <div class="col-4">
             <div class="footer-title-wrapper">
-              <h2 class="footer__title">Contact</h2>
+              <h2 class="footer__title">Contact Us</h2>
             </div>
             <div class="footer-contacts">
               <ul class="footer-contacts-list">
@@ -751,7 +759,7 @@
                     aria-hidden="true"
                   ></i>
                   <span class="hover-underline-animation"
-                    >88 Broklyn Golden Road Street New York. USA</span
+                    >22 N Oakwood Terrace, New Paltz, NY. USA</span
                   >
                 </li>
               </ul>
@@ -808,6 +816,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/scrollCounter.js"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>
