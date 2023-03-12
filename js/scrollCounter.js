@@ -19,10 +19,12 @@ window.addEventListener("scroll", function onScroll() {
 
 let number2 = document.querySelector(".number2"),
   start2 = +number2.innerHTML,
-  end2 = +number2.dataset.max;
+  end2 = +number2.dataset.max,
+  numberTop2 = number2.getBoundingClientRect().top;
+
 
 window.addEventListener("scroll", function onScroll() {
-  if (window.pageYOffset > numberTop - window.innerHeight / 1.2) {
+  if (window.pageYOffset > numberTop2 - window.innerHeight / 1.2) {
     this.removeEventListener("scroll", onScroll);
     let interval = setInterval(function () {
       number2.innerHTML = ++start2;
@@ -33,20 +35,41 @@ window.addEventListener("scroll", function onScroll() {
   }
 });
 
-function learn(language, callback) {
-  console.log(`I learn ${language}`);
-  callback();
-}
-function done() {
-  console.log("I passed this lesson");
-}
-learn("Js", done);
+let number3 = document.querySelector(".number3")
+if (number3) {
+  let start3 = +number3.innerHTML,
+  end3 = +number3.dataset.max,
+  numberTop3 = number3.getBoundingClientRect().top;
 
-let data = ["a", "c", "b", "a", "d", "c"];
-function uniq(array) {
-  return array.filter((val, index) => {
-    return array.indexOf(val) === index;
+  window.addEventListener("scroll", function onScroll() {
+    if (window.pageYOffset > numberTop3 - window.innerHeight / 1.2) {
+      this.removeEventListener("scroll", onScroll);
+      let interval = setInterval(function () {
+        number3.innerHTML = ++start3;
+        if (start3 == end3) {
+          clearInterval(interval);
+        }
+      }, 5);
+    }
   });
 }
 
-console.log(uniq(data));
+let number4 = document.querySelector(".number4")
+if (number4) {
+  let start4 = +number4.innerHTML,
+  end4 = +number4.dataset.max,
+  numberTop4 = number4.getBoundingClientRect().top;
+  
+
+  window.addEventListener("scroll", function onScroll() {
+    if (window.pageYOffset > numberTop4 - window.innerHeight / 1.2) {
+      this.removeEventListener("scroll", onScroll);
+      let interval = setInterval(function () {
+        number4.innerHTML = ++start4;
+        if (start4 == end4) {
+          clearInterval(interval);
+        }
+      }, 315);
+    }
+  });
+}
