@@ -17,11 +17,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="../../style/css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/css/media.min.css" />
   </head>
 
   <body>
     <header>
-      <div class="container-fluid header">
+      <div class="container-fluid header desctop-menu">
         <div class="row">
           <div
             class="header__logo col-2 d-flex justify-content-center align-items-center"
@@ -99,9 +100,20 @@
             <div class="row header-bottom">
               <nav class="header-bottom-nav col-8 col-xl-9 d-flex">
                 <ul class="header-bottom-nav__list d-flex align-items-center">
-                  <li><a href="../../index.html" class="active">Home</a></li>
-                  <li><a href="../../about/">About</a></li>
-                  <li><a href="../../#services">Services</a></li>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../../about">About</a></li>
+                  <li><button href="../../#services" class="dropdown">Services
+                    <ul class="dropdown_menu">
+                      <li class="dropdown_item-1"><a href="https://www.orangesoftinternational.com/Home/Clinical">HIPPA E-Forms</a></li>
+                      <li class="dropdown_item-2"><a href="https://www.hudsonvalleypos.com/">POS for Restaurants</a></li>
+                      <li class="dropdown_item-3"><a href="../../services/remote_admin_service/">Remote Admin Service</a></li>
+                      <li class="dropdown_item-4"><a href="../../services/remote_backup_service/">Remote Backup Service</a></li>
+                      <li class="dropdown_item-5"><a href="../../services/onsite_service/">Onsite Service</a></li>
+                      <li class="dropdown_item-6"><a href="#">Contract Priority Service</a></li>
+                      <li class="dropdown_item-7"><a href="../../services/repair&upgrades/">Repair & Upgrades</a></li>
+                      <li class="dropdown_item-8"><a href="../../services/computer_systems/">New Computer Systems</a></li>
+                    </ul>
+                  </button></li>
                   <li><a href="../../#customers">Customers</a></li>
                   <li><a href="../../contact/">Contact Us</a></li>
                 </ul>
@@ -128,6 +140,57 @@
           </div>
         </div>
       </div>
+      <div class="mob-menu">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <img class="mob-logo" src="../../img/logo-white.png" alt="">
+
+        <div class="menu">
+          <div class="menu-inner">
+            <ul class="menu-nav">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="../../index.html"
+                  ><span>
+                    <div>Home</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="../../about"
+                  ><span>
+                    <div>About</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="../../#services"
+                  ><span>
+                    <div>Services</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="../../#customers"
+                  ><span>
+                    <div>Customers</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="../../contact/"
+                  ><span>
+                    <div>Contact Us</div>
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section class="breadcrumbs">
@@ -149,8 +212,8 @@
 
     <section class="service-description">
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+        <div class="col-1 col-lg-2"></div>
+        <div class="col-10 col-lg-8">
           <h2 class="service-description__title">Service is our business.</h2>
           <p class="service-description__text">
             Our contracts insure your business receives Priority One Service,
@@ -170,14 +233,14 @@
             which will save you money.
           </p>
         </div>
-        <div class="col-2"></div>
+        <div class="col-1 col-lg-2"></div>
       </div>
     </section>
 
     <footer>
       <div class="container footer">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3 footer-block">
             <div class="footer-logo">
               <img
                 src="../../img/logo-white.png"
@@ -229,29 +292,29 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-12 col-md-6  col-lg-2 footer-block">
             <div class="footer-title-wrapper">
               <h2 class="footer__title">Links</h2>
             </div>
             <ul class="footer__list">
               <li class="footer__list_item">
-                <a class="hover-underline-animation" href="#">About</a>
+                <a class="hover-underline-animation" href="../../about">About</a>
               </li>
               <li class="footer__list_item">
-                <a class="hover-underline-animation" href="#">Meet our Team</a>
+                <a class="hover-underline-animation" href="../../#services">Services</a>
               </li>
               <li class="footer__list_item">
-                <a class="hover-underline-animation" href="#">News & Media</a>
+                <a class="hover-underline-animation" href="../../#customers">Customers</a>
               </li>
+
               <li class="footer__list_item">
-                <a class="hover-underline-animation" href="#">Our Projects</a>
-              </li>
-              <li class="footer__list_item">
-                <a class="hover-underline-animation" href="../../contact/">Contact Us</a>
+                <a class="hover-underline-animation" href="../../contact/"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-6  col-lg-4 footer-block">
             <div class="footer-title-wrapper">
               <h2 class="footer__title">Contact Us</h2>
             </div>
@@ -288,7 +351,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-6  col-lg-3 footer-block footer-block__working-hours">
             <div class="footer-title-wrapper">
               <h2 class="footer__title">Working Hours</h2>
             </div>

@@ -33,8 +33,16 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 const checkbox = document.querySelector("#burger-toggle");
+
+const menuItem = Array.from(document.querySelectorAll(".menu-nav-link"));
+menuItem.forEach((el) => {
+  el.addEventListener("click", () => {
+    document.querySelector("#burger-toggle").checked = false;
+    document.querySelector(".burger-menu").style.position = "absolute";
+    document.body.style.overflow = "auto";
+  });
+});
 
 checkbox.addEventListener("change", function () {
   if (this.checked) {
@@ -45,3 +53,26 @@ checkbox.addEventListener("change", function () {
   document.querySelector(".burger-menu").style.position = "absolute";
   document.body.style.overflow = "auto";
 });
+
+const servicesSection = document.querySelector("#services");
+const scrollToServicesButton = document.querySelector(".dropdown");
+scrollToServicesButton.addEventListener("click", () => {
+  servicesSection.scrollIntoView({ behavior: "smooth" });
+});
+
+const dropdownMenuItems = Array.from(document.querySelectorAll(".dropdown_menu li"));
+dropdownMenuItems.forEach((x) => {
+  x.addEventListener("click", (e) => {
+    e.stopPropagation();
+  })
+})
+
+const mainSliderButoon = Array.from(document.querySelectorAll(".slidenav__item"));
+mainSliderButoon.forEach((x) => {
+  x.addEventListener("click", () => {
+    mainSliderButoon.forEach((el) => {
+      el.style.animationPlayState = 'paused';
+      el.style.transform = 'none';
+    })
+  })
+})

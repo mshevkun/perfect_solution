@@ -56,6 +56,7 @@ p {
 }
 
 .mob-logo {
+  z-index: 999;
   max-height: 50px;
   position: absolute;
   left: 5vw;
@@ -90,6 +91,15 @@ p {
 .slider {
   margin-top: 122px;
   background-color: $heading;
+  min-height: calc(100vh - 120px);
+}
+
+.slideshow {
+  height: calc(100vh - 120px);
+}
+
+.slide {
+  height: calc(100vh - 120px);
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -291,15 +301,106 @@ p {
 .header-bottom-nav__list {
   width: 100%;
 
-  li {
-    padding-right: 50px;
+  > li {
+    // padding-right: 50px;
     display: flex;
     align-items: center;
     font-weight: 600;
+    // transition: background-color 2s ease-out 100ms;
+    // transition: 300ms ease-out 300ms;
 
     a {
+      padding: 20px 40px;
+      transition: 100ms ease-out;
+    }
+    &:hover a {
+      // transition: background-color 300ms ease-out 100ms;
+      background: $primary;
+      color: white;
+    }
+
+    &:hover .dropdown_menu li {
+      color: $text;
+    }
+    // &:hover a:not(.dropdown) {
+    //   color: red;
+    // }
+    @keyframes scaleZ {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      80% {
+        transform: scale(1.07);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .dropdown {
+      padding: 20px 40px;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 18px;
+      perspective: 1000px;
+      z-index: 100;
+      font-family: $primary-font;
+      font-size: 16px;
+      font-weight: 600;
+      color: $text;
+      line-height: inherit;
+
       &:hover {
-        color: $primary;
+        transition: background-color 300ms ease-out 100ms;
+        background: $primary;
+        color: white;
+      }
+
+      &:hover .dropdown_menu li {
+        display: block;
+      }
+      .dropdown_menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 218px;
+        perspective: 1000px;
+        z-index: -1;
+
+        @for $num from 1 through 8 {
+          .dropdown_item-#{$num} {
+            transform-origin: top center;
+            $duration: 60ms * $num;
+            animation: scaleZ 400ms #{$duration} ease-in-out forwards;
+          }
+        }
+        li {
+          display: none;
+          color: white;
+          background-color: $primary;
+          padding: 10px 20px;
+          font-size: 16px;
+          opacity: 0;
+          padding: 0;
+          text-align: left;
+          a {
+            display: block;
+            padding: 10px 0 10px 20px;
+            transition: 100ms ease-out;
+            &:hover {
+              background-color: white;
+              color: $primary;
+              animation: none;
+            }
+          }
+        }
       }
     }
   }
@@ -350,6 +451,50 @@ p {
   }
 }
 
+.icon-slider-button {
+  animation: icon-animation 2s ease-in-out infinite;
+
+  @keyframes icon-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      border-color: $secondary;
+      color: $secondary;
+    }
+    100% {
+      transform: none;
+    }
+  }
+
+  // @keyframes icon-inner-animation {
+  //   0% {
+  //     // transform: scale(1);
+  //   }
+  //   50% {
+  //     // transform: scale(1.2);
+  //     // border-color: $primary;
+  //     color: $secondary;
+  //   }
+  //   100% {
+  //     // transform: scale(1);
+  //   }
+  // }
+
+  &:hover {
+    // animation-play-state: paused;
+    // transform: scale(1.2);
+    border-color: $secondary;
+  }
+  // i {
+  //   animation: icon-inner-animation 2s ease-in-out infinite;
+  //   &:hover {
+  //     animation-play-state: paused;
+  //   }
+  // }
+}
+
 .icon-wrapper {
   width: 50px;
   height: 50px;
@@ -360,8 +505,11 @@ p {
   transition: all 0.5s;
   margin-right: 12px;
 
-  &:hover {
-    transform: scale(1.2);
+  &:hover i {
+    color: $secondary;
+  }
+
+  i {
     transition: all 0.5s;
   }
 }
@@ -1262,6 +1410,7 @@ footer {
       display: flex;
       align-items: center;
       padding-left: 30px;
+      padding-bottom: 20px;
     }
   }
   &__sm-text {
@@ -1282,6 +1431,9 @@ footer {
 
     &__list {
       margin: 10px 0;
+      li {
+        padding-bottom: 10px;
+      }
     }
   }
 }
@@ -1705,25 +1857,6 @@ footer {
     @content;
   }
 }
-
-// @mixin pc-layout {
-//   @media screen and (min-width: 751px) {
-//     @content;
-//   }
-// }
-
-// body {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   margin: 0;
-//   font-family: Lora, sans-serif;
-// }
-
-// p {
-//   margin: 0;
-// }
 
 .mob-menu {
   #burger-toggle {
