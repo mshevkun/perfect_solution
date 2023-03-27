@@ -1,518 +1,921 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Computer Solution</title>
 
-  <title>Perfect Computer Solution</title>
+    <link rel="shortcut icon" href="img/faviconV2.ico" type="image/x-icon" />
 
+    <!-- Bootstrap CSS -->
+    <link href="style/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link href="style/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/css/slider/base.css" />
+    <link rel="stylesheet" href="style/css/style.min.css" />
+    <link rel="stylesheet" href="style/css/media.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style/css/slider/base.css" />
-  <link href="style/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owlcarousel/owl.theme.default.min.css" />
+  </head>
 
-
-</head>
-
-<body>
-
-  <header>
-    <div class="container-fluid header">
-      <div class="row">
-        <div class="header__logo col-2 d-flex justify-content-center align-items-center">
-          <img src="img/logo-white.png" alt="logo">
-        </div>
-        <div class="row col-10 padding-none header-consult">
-          <div class="row padding-none">
-            <div class="header-consult-info d-flex justify-content-between col-9">
-              <div class="header-consult-info__title d-flex justify-content-center align-items-center">
-                <h3 class="header-consult-info__title">Welcome to Perfect IT Solutions & Services</h3>
-              </div>
-              <div class="header-consult-info__info">
-                <div class="header-consult-info__info_email d-flex align-items-center justify-content-right">
-                  <i class="fa fa-envelope header-consult-info__icon" aria-hidden="true"></i>
-                  <p class="header-consult-info__info_text hover-underline-animation">needhelp@company.com</p>
+  <body>
+    <header>
+      <div class="container-fluid header desctop-menu">
+        <div class="row">
+          <div
+            class="header__logo col-2 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/logo-white.png" alt="logo" />
+          </div>
+          <div class="row col-10 padding-none header-consult">
+            <div class="row padding-none">
+              <div
+                class="header-consult-info d-flex justify-content-between col-9"
+              >
+                <div
+                  class="header-consult-info__title d-flex justify-content-center align-items-center"
+                >
+                  <h3 class="header-consult-info__title">
+                    Welcome to Perfect IT Solutions & Services
+                  </h3>
                 </div>
-                <div class="header-consult-info__info_working-hours d-flex align-items-center justify-content-right">
-                  <i class="fa fa-clock-o header-consult-info__icon" aria-hidden="true"></i>
-                  <p class="header-consult-info__info_text">Mon - Sat: 8.00 am - 7.00 pm</p>
+                <div class="header-consult-info__info">
+                  <div
+                    class="header-consult-info__info_email d-flex align-items-center justify-content-right"
+                  >
+                    <i
+                      class="fa fa-envelope header-consult-info__icon"
+                      aria-hidden="true"
+                    ></i>
+                    <p
+                      class="header-consult-info__info_text hover-underline-animation"
+                    >
+                      needhelp@company.com
+                    </p>
+                  </div>
+                  <div
+                    class="header-consult-info__info_working-hours d-flex align-items-center justify-content-right"
+                  >
+                    <i
+                      class="fa fa-clock-o header-consult-info__icon"
+                      aria-hidden="true"
+                    ></i>
+                    <p class="header-consult-info__info_text">
+                      Mon - Sat: 8.00 am - 7.00 pm
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="header__social-networks col-3 d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="header-social-network d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="header-social-network d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="header-social-network d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="header-social-network d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row header-bottom">
+              <nav class="header-bottom-nav col-8 col-xl-9 d-flex">
+                <ul class="header-bottom-nav__list d-flex align-items-center">
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="about/">About</a></li>
+                  <li>
+                    <button href="#services" class="dropdown">
+                      Services
+                      <ul class="dropdown_menu">
+                        <li class="dropdown_item-1"><a href="https://www.orangesoftinternational.com/Home/Clinical">HIPPA E-Forms</a></li>
+                        <li class="dropdown_item-2"><a href="https://www.hudsonvalleypos.com/">POS for Restaurants</a></li>
+                        <li class="dropdown_item-3"><a href="services/remote_admin_service/">Remote Admin Service</a></li>
+                        <li class="dropdown_item-4"><a href="services/remote_backup_service/">Remote Backup Service</a></li>
+                        <li class="dropdown_item-5"><a href="services/onsite_service/">Onsite Service</a></li>
+                        <li class="dropdown_item-6"><a href="services/contract_priority_service/">Contract Priority Service</a></li>
+                        <li class="dropdown_item-7"><a href="services/repair&upgrades/">Repair & Upgrades</a></li>
+                        <li class="dropdown_item-8"><a href="services/computer_systems/">New Computer Systems</a></li>
+                      </ul>
+                    </button>
+                  </li>
+                  <li><a href="#customers">Customers</a></li>
+                  <li><a href="contact/">Contact Us</a></li>
+                </ul>
+              </nav>
+              <div
+                class="col-4 col-xl-3 header-bottom-phone-contact d-flex align-items-center"
+              >
+                <a href="tel:380660795472">
+                  <div class="header-bottom__icon icon-wrapper">
+                    <img src="img/phone-message.png" alt="Сall icon" />
+                  </div>
+                </a>
+
+                <div class="header-bottom__content">
+                  <p class="header-bottom__content_call">Call anytime</p>
+                  <p
+                    class="header-bottom__content_num hover-underline-animation"
+                  >
+                    + 88 ( 9800 ) 6802
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="header__social-networks col-3 d-flex justify-content-center align-items-center">
-              <a href="#" class="header-social-network d-flex justify-content-center align-items-center">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="header-social-network d-flex justify-content-center align-items-center">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="header-social-network d-flex justify-content-center align-items-center">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="header-social-network d-flex justify-content-center align-items-center">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row header-bottom">
-            <nav class="header-bottom-nav col-9 d-flex">
-              <ul class="header-bottom-nav__list d-flex align-items-center">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-            <div class="col-3 header-bottom-phone-contact d-flex align-items-center">
-              <a href="tel:380660795472">
-                <div class="header-bottom__icon icon-wrapper">
-                  <img src="img/phone-message.png" alt="Сall icon">
-                </div>
-              </a>
-
-              <div class="header-bottom__content">
-                <p class="header-bottom__content_call">Call anytime</p>
-                <p class="header-bottom__content_num hover-underline-animation">+ 88 ( 9800 ) 6802</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+      <div class="mob-menu">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <img class="mob-logo" src="img/logo-white.png" alt="" />
 
-    </div>
-  </header>
-
-  <section class="slider">
-    <main>
-      <div class="content content--fixed">
-        <header class="codrops-header">
-
-        </header>
-      </div>
-      
-      <div class="slideshow">
-        <div class="slides">
-          <div class="slide slide--current">
-            
-            <div class="slide__img-wrapper">
-              <img src="img/slider-img/slider-01.jpg" class="slide__img" alt="">
-            </div>
-            <h2 class="slide__title">Experience the best IT Solutions </h2>
-            <p class="slide__desc">IT Solutions <span class="slide__desc_symb">&</span><br>Services</p>
-            <div class="slide__link-wrapper main_btn-wrapper">
-              <a class="slide__link main_btn" href="#">
-                <span>learn more</span>
-              </a>
-              <img class="slide__link-image" src="img/slide_content__arrow.png" alt="">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img-wrapper">
-              <img src="img/slider-img/slider-02.jpg" class="slide__img" alt="">
-            </div>
-            <h2 class="slide__title">Experience the best IT Solutions </h2>
-            <p class="slide__desc">Develop web <span class="slide__desc_symb">&</span><br>Services</p>
-            <div class="slide__link-wrapper main_btn-wrapper">
-              <a class="slide__link main_btn" href="#">
-                <span>learn more</span>
-              </a>
-              <img class="slide__link-image" src="img/slide_content__arrow.png" alt="">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img-wrapper">
-              <img src="img/slider-img/slider-03.jpg" class="slide__img" alt="">
-            </div>
-            <h2 class="slide__title">Experience the best IT Solutions </h2>
-            <p class="slide__desc">web responsive <span class="slide__desc_symb">&</span><br>Services</p>
-            <div class="slide__link-wrapper main_btn-wrapper">
-              <a class="slide__link main_btn" href="#">
-                <span>learn more</span>
-              </a>
-              <img class="slide__link-image" src="img/slide_content__arrow.png" alt="">
-            </div>
-          </div>
-        </div>
-        <nav class="slidenav">
-          <button class="slidenav__item slidenav__item--prev icon-wrapper">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-          </button>
-          <button class="slidenav__item slidenav__item--next icon-wrapper">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </button>
-        </nav>
-      </div>
-    </main>
-  </section>
-
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 about__images">
-          <div class="about__client-block">
-            <div>
-              <span class="about__client-block-count">6800</span>
-              <sup class="suffix">+</sup>
-            </div>
-            <span class="about__client-block-title">Satisfied Clients</span>
-          </div>
-          <div class="about__image_firts">
-            <img src="./img/about01.jpg" alt="">
-          </div>
-          
-          <div class="about__image_logo">
-            <img src="./img/it_logo_home-150x150.png" alt="">
-          </div>
-
-          <div class="about__image_second">
-            <img src="./img/about02.jpg" alt="">
-          </div>
-          
-        </div>
-        <div class="col-6 about__content">
-          <h3 class="sub-title">
-            <span class="underlined"></span>
-            About our company
-          </h3>
-          <h2 class="title">
-            We're Partner of Your Innovations
-          </h2>
-          <p class="about__text">Infetech is a provider of IT consulting and software development services. We have helped organizations and companies improve business performance & enhance their  competitiveness.</p>
-          <div class="about__icons-wrapper">
-            <div class="about-icon mt-3">
-              <div class="about-icon-img-wrapper">
-                <img class="about-icon__image" src="./img/coding.png" alt="">
-              </div>
-              <div class="about-icon-text-wrapper">
-                <p class="about-icon__text">website development</p>
-              </div>
-            </div>
-            <div class="about-icon mt-3">
-              <div class="about-icon-img-wrapper">
-                <img class="about-icon__image" src="./img/dashboard.png" alt="">
-              </div>
-              <div class="about-icon-text-wrapper">
-                <p class="about-icon__text">Internal Networking</p>
-              </div>
-            </div>
-          </div>
-
-          <ul class="about-list">
-            <li class="about-list__item">
-              <div class="about-list__check-mark">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </div>
-              <span class="about-list__text">Bringing new IT solutions to the market</span>
-            </li>
-            <li class="about-list__item">
-              <div class="about-list__check-mark">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </div>
-              <span  class="about-list__text">To be included the list of the best 100 IT companies</span>
-            </li>
-            <li class="about-list__item">
-              <div class="about-list__check-mark">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </div>
-              <span class="about-list__text">Our company have 300 IT senior professionals.</span>
-            </li>
-          </ul>
-          <div class="slide__link-wrapper main_btn-wrapper">
-            <a class="slide__link main_btn mt-5" href="#">
-              <span>About us</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="container">
-      <div class="row services__title-wrapper">
-        <div class="col-6">
-          <h3 class="sub-title">
-            <span class="underlined"></span>
-            What We’re Offering
-          </h3>
-          <h2 class="title services__title">
-            Dealing in all Professional IT Services
-          </h2>
-        </div>
-        <div class="col-6">
-          <p class="services__text"> We offers a full-cycle software development services that meet varied business requirements  from IT strategy consulting to the end-to-end development of scalable solutions.</p>
-        </div>
-      </div>
-      <div class="row services__cards">
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/web-studio.png" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/illustration.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Web Studio</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/software-studio.png" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/settings.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Software Studio</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/administration-service.png" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/blogger.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Remote Administration Service</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/service1-03.jpg" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/cloud.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Remote Backup Service</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="row services-cards">
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/service1-01.jpg" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/worker.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Onsite Service</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/service1-02.jpg" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/contract.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Contract Priority Service</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/service1-03.jpg" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/upgrade.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>Repair & Upgrades</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-3 services__card card-block">
-          <div class="card-item">
-            <div class="card-layer"></div>
-            <img src="./img/service1-03.jpg" class="services__card-image" alt="services card image">
-            <div class="services__card-content">
-              <div class="services__icon">
-                <img src="./img/system.png" alt="">
-              </div>
-              <div class="services__card-title">
-                <p>New Computer Systems</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <div class="container-block">
-    <div class="card-block">
-      <div class="card-item"></div>
-    </div>
-    <div class="card-block">
-      <div class="card-item"></div>
-    </div>
-    <div class="card-block">
-      <div class="card-item"></div>
-    </div>
-  </div> -->
-
-  <section style="min-height: 100px"></section>
-
-  <footer>
-    <div class="container footer">
-      <div class="row">
-        <div class="col-3">
-          <div class="footer-logo">
-            <img src="img/logo-white.png" class="footer-logo__image" alt="">
-          </div>
-          <p class="footer-text">We work with a passion of taking challenges and creating new ones in advertising
-            sector.</p>
-          <div class="footer-social-network d-flex justify-content-between align-items-center">
-            <div class="icon-wrapper footer-social-network-item-wrapper">
-              <a href="#" class="footer-social-network__item d-flex justify-content-center align-items-center">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="icon-wrapper footer-social-network-item-wrapper">
-              <a href="#" class="footer-social-network__item d-flex justify-content-center align-items-center">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="icon-wrapper footer-social-network-item-wrapper">
-              <a href="#" class="footer-social-network__item d-flex justify-content-center align-items-center">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="icon-wrapper footer-social-network-item-wrapper">
-              <a href="#" class="footer-social-network__item d-flex justify-content-center align-items-center">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="footer-title-wrapper">
-            <h2 class="footer__title">Links</h2>
-          </div>
-          <ul class="footer__list">
-            <li class="footer__list_item">
-              <a class="hover-underline-animation" href="#">About</a>
-            </li>
-            <li class="footer__list_item">
-              <a class="hover-underline-animation" href="#">Meet our Team</a>
-            </li>
-            <li class="footer__list_item">
-              <a class="hover-underline-animation" href="#">News & Media</a>
-            </li>
-            <li class="footer__list_item">
-              <a class="hover-underline-animation" href="#">Our Projects</a>
-            </li>
-            <li class="footer__list_item">
-              <a class="hover-underline-animation" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <div class="footer-title-wrapper">
-            <h2 class="footer__title">Contact</h2>
-          </div>
-          <div class="footer-contacts">
-            <ul class="footer-contacts-list">
-              <li class="footer-contacts__list-item">
-                <i class="fa fa-phone footer-contacts__list-item-icon" aria-hidden="true"></i>
-                <span class="footer-contacts__list-item-text hover-underline-animation">+ 88 ( 9800 ) 6802</span>
+        <div class="menu">
+          <div class="menu-inner">
+            <ul class="menu-nav">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#"
+                  ><span>
+                    <div>Home</div>
+                  </span></a
+                >
               </li>
-              <li class="footer-contacts__list-item">
-                <i class="fa fa-envelope footer-contacts__list-item-icon" aria-hidden="true"></i>
-                <span class="hover-underline-animation">needhelp@company.com</span>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="about/"
+                  ><span>
+                    <div>About</div>
+                  </span></a
+                >
               </li>
-              <li class="footer-contacts__list-item">
-                <i class="fa fa-map-marker footer-contacts__list-item-icon" aria-hidden="true"></i>
-                <span class="hover-underline-animation">88 Broklyn Golden Road Street New York. USA</span>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#services"
+                  ><span>
+                    <div>Services</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#customers"
+                  ><span>
+                    <div>Customers</div>
+                  </span></a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="contact/"
+                  ><span>
+                    <div>Contact Us</div>
+                  </span></a
+                >
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-3">
-          <div class="footer-title-wrapper">
-            <h2 class="footer__title">Working Hours</h2>
-          </div>
+      </div>
+    </header>
 
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Monday</div>
-            <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
-          </div>
+    <section class="slider">
+      <main>
+        <div class="content content--fixed">
+          <header class="codrops-header"></header>
+        </div>
 
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Tuesday</div>
-            <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+        <div class="slideshow">
+          <div class="slides">
+            <div class="slide slide--current">
+              <div class="slide__img-wrapper">
+                <img
+                  src="img/slider-img/slider1.png"
+                  class="slide__img"
+                  alt=""
+                />
+              </div>
+              <h2 class="slide__title">Experience the best IT Solutions</h2>
+              <p class="slide__desc">
+                IT Solutions <span class="slide__desc_symb">&</span
+                ><br />Services
+              </p>
+              <div class="slide__link-wrapper main_btn-wrapper">
+                <a class="slide__link main_btn" href="#">
+                  <span>learn more</span>
+                </a>
+                <img
+                  class="slide__link-image"
+                  src="img/slide_content__arrow.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__img-wrapper">
+                <img
+                  src="img/slider-img/slider2.png"
+                  class="slide__img"
+                  alt=""
+                />
+              </div>
+              <h2 class="slide__title">Experience the best IT Solutions</h2>
+              <p class="slide__desc">
+                Develop web <span class="slide__desc_symb">&</span
+                ><br />Services
+              </p>
+              <div class="slide__link-wrapper main_btn-wrapper">
+                <a class="slide__link main_btn" href="#">
+                  <span>learn more</span>
+                </a>
+                <img
+                  class="slide__link-image"
+                  src="img/slide_content__arrow.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__img-wrapper">
+                <img
+                  src="img/slider-img/slider3.png"
+                  class="slide__img"
+                  alt=""
+                />
+              </div>
+              <h2 class="slide__title">Experience the best IT Solutions</h2>
+              <p class="slide__desc">
+                web responsive <span class="slide__desc_symb">&</span
+                ><br />Services
+              </p>
+              <div class="slide__link-wrapper main_btn-wrapper">
+                <a class="slide__link main_btn" href="#">
+                  <span>learn more</span>
+                </a>
+                <img
+                  class="slide__link-image"
+                  src="img/slide_content__arrow.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Wednesday</div>
-            <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+          <nav class="slidenav">
+            <button class="slidenav__item slidenav__item--prev icon-wrapper icon-slider-button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="slidenav__item slidenav__item--next icon-wrapper icon-slider-button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </main>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 about__images">
+            <div class="about__client-block">
+              <div>
+                <span class="about__client-block-count number3" data-max="374"
+                  >0</span
+                >
+                <sup class="suffix">+</sup>
+              </div>
+              <span class="about__client-block-title">Satisfied Clients</span>
+            </div>
+            <div class="about__image_firts">
+              <div class="about__image_logo">
+                <img src="./img/it_logo_home.png" alt="" />
+              </div>
+              <img class="about-first-image" src="./img/about01.jpg" alt="" />
+              <div class="about__image_second about__image_second-desc">
+                <img src="./img/about02.jpg" alt="" />
+              </div>
+              <div class="about__image_second-mob">
+                <img
+                  class="about-second-image"
+                  src="./img/about02.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Thursday</div>
-            <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
-          </div>
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Friday</div>
-            <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
-          </div>
-          <div class="footer-col-hours-wrapper d-flex justify-content-between">
-            <div class="footer-col-hours-wrapper__week-day">Saturday - Sunday</div>
-            <div class="footer-col-hours-wrapper__time">Closed</div>
+          <div class="col-12 col-lg-6 about__content">
+            <h3 class="sub-title">
+              <span class="underlined"></span>
+              About our company
+            </h3>
+            <h2 class="title">We're Partner of Your Innovations</h2>
+            <p class="about__text">
+              Infetech is a provider of IT consulting and software development
+              services. We have helped organizations and companies improve
+              business performance & enhance their competitiveness.
+            </p>
+            <div class="about__icons-wrapper">
+              <div class="about-icon mt-3">
+                <div class="about-icon-img-wrapper">
+                  <img
+                    class="about-icon__image"
+                    src="./img/coding.png"
+                    alt=""
+                  />
+                </div>
+                <div class="about-icon-text-wrapper">
+                  <p class="about-icon__text">website development</p>
+                </div>
+              </div>
+              <div class="about-icon mt-3">
+                <div class="about-icon-img-wrapper">
+                  <img
+                    class="about-icon__image"
+                    src="./img/dashboard.png"
+                    alt=""
+                  />
+                </div>
+                <div class="about-icon-text-wrapper">
+                  <p class="about-icon__text">Internal Networking</p>
+                </div>
+              </div>
+            </div>
+
+            <ul class="about-list">
+              <li class="about-list__item">
+                <div class="check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span class="about-list__text"
+                  >Bringing new IT solutions to the market</span
+                >
+              </li>
+              <li class="about-list__item">
+                <div class="check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span class="about-list__text"
+                  >To be included the list of the best 100 IT companies</span
+                >
+              </li>
+              <li class="about-list__item">
+                <div class="check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span class="about-list__text"
+                  >Our company have 300 IT senior professionals.</span
+                >
+              </li>
+            </ul>
+            <div class="slide__link-wrapper main_btn-wrapper">
+              <a class="slide__link main_btn" href="#">
+                <span>Learn more</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row services__title-wrapper">
+          <div class="col-12 col-md-6">
+            <h3 class="sub-title">
+              <span class="underlined"></span>
+              What We’re Offering
+            </h3>
+            <h2 class="title services__title">
+              Dealing in all Professional IT Services
+            </h2>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="services__text">
+              We offer a number of services to our Clients. We provide On-site
+              Troubleshooting, Maintenance and Repair, Remote Administration,
+              Remote off-site Backups and More! For Networking, Training,
+              Consultation, Website design, and programming, please use the menu
+              links above.
+            </p>
+          </div>
+        </div>
+        <div class="row services__cards">
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="https://www.orangesoftinternational.com/Home/Clinical" class="card-layer"></a>
+              <img
+                src="./img/hippa.png"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/medical.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>HIPPA E-Forms</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="https://www.hudsonvalleypos.com/" class="card-layer"></a>
+              <img
+                src="./img/restaurant.png"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/smartphone1.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>POS for Restaurants</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="services/remote_admin_service/" class="card-layer"></a>
+              <img
+                src="./img/administration-service.png"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/blogger.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>Remote Administration Service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="services/remote_backup_service/" class="card-layer"></a>
+              <img
+                src="./img/cloud-system-with-data-protection.jpg"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/cloud.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>Remote Backup Service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row services-cards">
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="services/onsite_service/" class="card-layer"></a>
+              <img
+                src="./img/man-is-writing-e-mail.jpg"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/worker.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>Onsite Service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a
+                href="services/contract_priority_service/"
+                class="card-layer"
+              ></a>
+              <img
+                src="./img/hands-shaking.jpg"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/contract.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>Contract Priority Service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="services/repair&upgrades/" class="card-layer"></a>
+              <img
+                src="./img/technician-repairing-technology.jpg"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/upgrade.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>Repair & Upgrades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 services__card card-block">
+            <div class="card-item">
+              <a href="services/computer_systems/" class="card-layer"></a>
+              <img
+                src="./img/service1-03.jpg"
+                class="services__card-image"
+                alt="services card image"
+              />
+              <div class="services__card-content">
+                <div class="services__icon">
+                  <img src="./img/system.png" alt="" />
+                </div>
+                <div class="services__card-title">
+                  <p>New Computer Systems</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Slider -->
-  <script src="js/slider/demo.js"></script>
-  <script src="js/slider/imagesloaded.pkgd.min.js"></script>
-  <script src="js/slider/anime.min.js"></script>
-  <script src="js/slider/demo3.js"></script>
-</body>
+    <section class="site-offer">
+      <div class="container site-offer__bg">
+        <div class="site-offer__image-wrapper">
+          <img
+            class="site-offer__circle-img"
+            src="./img/service-circle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="site-offer__wrapper">
+          <h3 class="site-offer__title">We’re Ready Develop Your Site!</h3>
+          <div class="site-offer__content">
+            <ul class="site-offer__list">
+              <li>
+                <div class="check-mark site-offer__check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span>IT solutions are created by top experts</span>
+              </li>
+              <li>
+                <div class="check-mark site-offer__check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span
+                  >Receive free consultation for any kind of IT solutions</span
+                >
+              </li>
+              <li>
+                <div class="check-mark site-offer__check-mark">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <span>Support 24/7 for partners during the process.</span>
+              </li>
+            </ul>
+            <div>
+              <a class="main_btn white-btn">
+                <span>learn more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="reviews" id="customers">
+      <h3 class="sub-title reviews__sub-title">
+        <span class="underlined"></span>
+        Client Testimonials
+      </h3>
+      <h2 class="title">What They’re Talking?</h2>
+      <div class="container">
+        <div class="owl-one owl-carousel owl-theme">
+          <div class="item">
+            <div class="reviews__each">
+              <div class="slider-item__icon-quote">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__client-image">
+                  <img src="img/reviews/testimonial-2.jpg" alt="" />
+                </div>
+                <div class="reviews__name-job">
+                  <p class="slider-item__name">Mike Hardson</p>
+                  <p class="slider-item__job">Senior Designer</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">
+                Infetech is a a professional IT Company that always creates
+                quality software for clients. If you are looking for a team of
+                talent developers to find out the best IT solutions, Infetech is
+                a company that your team should consider.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="reviews__each">
+              <div class="slider-item__icon-quote">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__client-image">
+                  <img src="img/reviews/testimonial-1.jpg" alt="" />
+                </div>
+                <div class="reviews__name-job">
+                  <p class="slider-item__name">Peek Thakul</p>
+                  <p class="slider-item__job">Senior Designer</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">
+                Infetech is a a professional IT Company that always creates
+                quality software for clients. If you are looking for a team of
+                talent developers to find out the best IT solutions, Infetech is
+                a company that your team should consider.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="reviews__each">
+              <div class="slider-item__icon-quote">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__client-image">
+                  <img src="img/reviews/testimonial-3.jpg" alt="" />
+                </div>
+                <div class="reviews__name-job">
+                  <p class="slider-item__name">Alisa Hardson</p>
+                  <p class="slider-item__job">Senior Designer</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">
+                Infetech is a a professional IT Company that always creates
+                quality software for clients. If you are looking for a team of
+                talent developers to find out the best IT solutions, Infetech is
+                a company that your team should consider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-num parallax-block">
+      <div class="parallax-block__background-overlay"></div>
+      <div class="parallax-block__background-color"></div>
+      <div class="parallax-block__geometry"></div>
+      <div class="row container parallax-block__content">
+        <div class="col-12 col-md-6 col-xl-5">
+          <div
+            class="result-num__contact-button header-bottom__icon icon-wrapper"
+          >
+            <img src="img/phone-message.png" alt="Сall icon" />
+          </div>
+          <h2 class="result-num__sub-title">Do You Need a Meeting?</h2>
+          <h3 class="title result-num__title">
+            Save Time and Money with a Top IT Solution Agency
+          </h3>
+        </div>
+        <div class="col-0 col-md-3"></div>
+        <div class="col-12 col-md-3 col-xl-4">
+          <div class="result-num__customers-block result-num__block">
+            <span class="result-num__number number1" data-max="374">0</span>
+            <p class="result-num__text">We have satisfied customers</p>
+          </div>
+          <div class="result-num__projects-block result-num__block">
+            <span class="result-num__number number2" data-max="468">0</span>
+            <p class="result-num__text">Projects has been completed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 footer-block">
+            <div class="footer-logo">
+              <img src="img/logo-white.png" class="footer-logo__image" alt="" />
+            </div>
+            <p class="footer-text">
+              We work with a passion of taking challenges and creating new ones
+              in advertising sector.
+            </p>
+            <div
+              class="footer-social-network d-flex justify-content-between align-items-center"
+            >
+              <div class="icon-wrapper footer-social-network-item-wrapper">
+                <a
+                  href="#"
+                  class="footer-social-network__item d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="icon-wrapper footer-social-network-item-wrapper">
+                <a
+                  href="#"
+                  class="footer-social-network__item d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="icon-wrapper footer-social-network-item-wrapper">
+                <a
+                  href="#"
+                  class="footer-social-network__item d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="icon-wrapper footer-social-network-item-wrapper">
+                <a
+                  href="#"
+                  class="footer-social-network__item d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-block">
+            <div class="footer-title-wrapper">
+              <h2 class="footer__title">Links</h2>
+            </div>
+            <ul class="footer__list">
+              <li class="footer__list_item">
+                <a class="hover-underline-animation" href="about/">About</a>
+              </li>
+              <li class="footer__list_item">
+                <a class="hover-underline-animation" href="#services"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__list_item">
+                <a class="hover-underline-animation" href="#customers"
+                  >Customers</a
+                >
+              </li>
+
+              <li class="footer__list_item">
+                <a class="hover-underline-animation" href="contact/"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 footer-block">
+            <div class="footer-title-wrapper">
+              <h2 class="footer__title">Contact Us</h2>
+            </div>
+            <div class="footer-contacts">
+              <ul class="footer-contacts-list">
+                <li class="footer-contacts__list-item">
+                  <i
+                    class="fa fa-phone footer-contacts__list-item-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span
+                    class="footer-contacts__list-item-text hover-underline-animation"
+                    >+ 88 ( 9800 ) 6802</span
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <i
+                    class="fa fa-envelope footer-contacts__list-item-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="hover-underline-animation"
+                    >needhelp@company.com</span
+                  >
+                </li>
+                <li class="footer-contacts__list-item">
+                  <i
+                    class="fa fa-map-marker footer-contacts__list-item-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="hover-underline-animation"
+                    >22 N Oakwood Terrace, New Paltz, NY. USA</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 footer-block footer-block__working-hours"
+          >
+            <div class="footer-title-wrapper">
+              <h2 class="footer__title">Working Hours</h2>
+            </div>
+
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">Monday</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+            </div>
+
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">Tuesday</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+            </div>
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">Wednesday</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+            </div>
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">Thursday</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+            </div>
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">Friday</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
+            </div>
+            <div
+              class="footer-col-hours-wrapper d-flex justify-content-between"
+            >
+              <div class="footer-col-hours-wrapper__week-day">
+                Saturday - Sunday
+              </div>
+              <div class="footer-col-hours-wrapper__time">Closed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/owlcarousel/owl.carouselMain.js"></script>
+
+    <script src="js/scrollCounter.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Slider -->
+    <!-- <script src="js/slider/demo.js"></script> -->
+    <script src="js/slider/imagesloaded.pkgd.min.js"></script>
+    <script src="js/slider/anime.min.js"></script>
+    <script src="js/slider/demo3.js"></script>
+  </body>
 </html>
