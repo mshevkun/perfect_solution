@@ -95,6 +95,11 @@
     right: -30px;
   }
 
+  .contact__image {
+    max-width: 75%;
+    margin: 0 0 50px 50px;
+  }
+
   .about__benefits-col {
     margin-right: 20px;
   }
@@ -180,7 +185,7 @@
   }
 
   .header__logo img {
-    max-height: 30px;
+    max-height: 55%;
   }
 
   .services__title-wrapper {
@@ -620,6 +625,11 @@
 
   .slide__title {
     margin-top: 80px;
+  }
+
+  .contact__image {
+    max-width: 100%;
+    margin: 0 0 50px 0;
   }
 
   .slide__link-image {
