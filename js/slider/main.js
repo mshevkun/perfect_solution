@@ -294,7 +294,7 @@
     startAutoSlide() {
       this.autoSlideInterval = setInterval(() => {
         this.navigate("next");
-      }, 1000);
+      }, 2000);
     }
     stopAutoSlide() {
       clearInterval(this.autoSlideInterval);
