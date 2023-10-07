@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800&display=swap");
 
-$primary: #5f2dee;
-$secondary: #b882fc;
+// $primary: #5f2dee;
+$primary: #FF8C00;
+// $secondary: #b882fc;
+$secondary: #FFA07A;
 $text: #6c6a72;
 $heading: #1d1729;
 $light: #e4e0ee;
@@ -252,7 +254,7 @@ p {
   background-color: $heading;
 
   img {
-    max-height: 41px;
+    max-height: 90%;
   }
 }
 
@@ -452,47 +454,10 @@ p {
 }
 
 .icon-slider-button {
-  animation: icon-animation 2s ease-in-out infinite;
-
-  @keyframes icon-animation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-      border-color: $secondary;
-      color: $secondary;
-    }
-    100% {
-      transform: none;
-    }
-  }
-
-  // @keyframes icon-inner-animation {
-  //   0% {
-  //     // transform: scale(1);
-  //   }
-  //   50% {
-  //     // transform: scale(1.2);
-  //     // border-color: $primary;
-  //     color: $secondary;
-  //   }
-  //   100% {
-  //     // transform: scale(1);
-  //   }
-  // }
-
   &:hover {
-    // animation-play-state: paused;
-    // transform: scale(1.2);
+    transform: scale(1.2);
     border-color: $secondary;
   }
-  // i {
-  //   animation: icon-inner-animation 2s ease-in-out infinite;
-  //   &:hover {
-  //     animation-play-state: paused;
-  //   }
-  // }
 }
 
 .icon-wrapper {
@@ -545,7 +510,7 @@ p {
 }
 
 .footer-logo__image {
-  max-width: 164px;
+  max-width: 50px;
 }
 
 .footer-logo {
@@ -725,11 +690,11 @@ footer {
 .slidenav__item {
   cursor: pointer;
   margin-top: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid $secondary;
   border-radius: 50%;
 
   & i {
-    color: rgba(255, 255, 255, 0.6);
+    color: $secondary;
   }
 }
 
@@ -752,7 +717,7 @@ footer {
   &__client-block {
     position: absolute;
     padding: 20px 36px;
-    background-color: #b882fc;
+    background-color: #FFA07A;
     color: #fff;
     top: 200px;
     z-index: 1;
@@ -1363,7 +1328,7 @@ footer {
     transform: auto;
     height: 212px;
     opacity: 0.5;
-    background-image: linear-gradient(0deg, #5f2dee 0%, #a974fa 100%);
+    background-image: linear-gradient(0deg, #FF8C00 0%, #a974fa 100%);
     clip-path: polygon(100% 0, 100% 100%, 0 0%);
     transform-origin: unset;
     transform: unset;
@@ -1469,9 +1434,13 @@ footer {
 }
 
 .contact {
+  &__image {
+    max-width: 100%;
+  }
   margin: 120px 0;
   .contact-info {
     max-width: 366px;
+    margin-left: 100px;
     &__elem {
       display: flex;
       align-items: center;
@@ -1482,7 +1451,7 @@ footer {
     }
   }
   &__circle {
-    background-image: -webkit-linear-gradient(0deg, #5f2dee 0%, #b882fc 100%);
+    background-image: -webkit-linear-gradient(0deg, #FF8C00 0%, #FFA07A 100%);
     border-radius: 50%;
     box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
     min-width: 91px;
@@ -1570,7 +1539,7 @@ footer {
   background-color: #1d1729;
   border-style: solid;
   border-width: 0px 0px 0px 10px;
-  border-color: #b882fc;
+  border-color: #FFA07A;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 70px 100px 70px 100px;
   max-width: 1290px;
@@ -1621,7 +1590,7 @@ footer {
     max-width: 460px;
     padding: 0px 0px 0px 20px;
     background-color: transparent;
-    background-image: linear-gradient(0deg, #5f2dee 0%, #b882fc 100%);
+    background-image: linear-gradient(0deg, #FF8C00 0%, #FFA07A 100%);
   }
 
   &__image {

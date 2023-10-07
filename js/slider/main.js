@@ -1,15 +1,4 @@
-/**
- * demo2.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
 {
-  // From https://davidwalsh.name/javascript-debounce-function.
   function debounce(func, wait, immediate) {
     var timeout;
     return function () {
@@ -135,23 +124,22 @@
       let startX, endX;
       const self = this;
 
-
       const slidesArr = [...document.querySelectorAll(".slide")];
       slidesArr.forEach((slide) => {
         slide.addEventListener("touchstart", function (e) {
           startX = e.touches[0].clientX;
         });
-        slide.addEventListener("touchstart", function (e) {
-          startX = e.touches[0].clientX;
-        });
+        // slide.addEventListener("touchstart", function (e) {
+        //   startX = e.touches[0].clientX;
+        // });
         slide.addEventListener("touchend", function (e) {
           endX = e.changedTouches[0].clientX;
 
-          if (startX - endX > 50 & window.innerWidth <= 768) {
+          if ((startX - endX > 50) & (window.innerWidth <= 768)) {
             console.log(window.innerWidth);
             // Swipe left, show next slide
             self.navigate("next");
-          } else if (endX - startX > 50 & window.innerWidth <= 768) {
+          } else if ((endX - startX > 50) & (window.innerWidth <= 768)) {
             // Swipe right, show previous slide
             self.navigate("prev");
           }
@@ -180,9 +168,13 @@
           this.navigate("next");
         }
       });
+      // Start auto sliding
+      this.startAutoSlide();
     }
     navigate(dir = "next") {
       if (this.isAnimating) return false;
+      // Stop auto sliding
+      this.stopAutoSlide();
       this.isAnimating = true;
 
       const animateShapeInTimeline = anime.timeline({
@@ -298,6 +290,14 @@
       };
 
       animateShapeInTimeline.finished.then(animateSlides).then(animateShapeOut);
+    }
+    startAutoSlide() {
+      this.autoSlideInterval = setInterval(() => {
+        this.navigate("next");
+      }, 1000);
+    }
+    stopAutoSlide() {
+      clearInterval(this.autoSlideInterval);
     }
   }
 
