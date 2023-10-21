@@ -129,9 +129,6 @@
         slide.addEventListener("touchstart", function (e) {
           startX = e.touches[0].clientX;
         });
-        // slide.addEventListener("touchstart", function (e) {
-        //   startX = e.touches[0].clientX;
-        // });
         slide.addEventListener("touchend", function (e) {
           endX = e.changedTouches[0].clientX;
 

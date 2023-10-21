@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800&display=swap");
-
-// $primary: #5f2dee;
-$primary: #FF8C00;
-// $secondary: #b882fc;
-$secondary: #FFA07A;
+$primary: #ff8c00;
+$secondary: #ffa07a;
 $text: #6c6a72;
 $heading: #1d1729;
 $light: #e4e0ee;
@@ -218,10 +215,6 @@ p {
   color: $heading;
 }
 
-// .slideshow {
-//   height: 85vh;
-// }
-
 .slide__img-wrapper img {
   width: auto;
 }
@@ -244,10 +237,20 @@ p {
   min-width: 16px;
 }
 
-.footer-contacts__list-item-icon {
-  color: $secondary;
-  margin-right: 12px;
-  min-width: 16px;
+.footer-contacts {
+  &__list-item {
+    &-icon {
+      color: $secondary;
+      margin-right: 12px;
+      min-width: 16px;
+    }
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  &__address-block {
+    max-width: 255px;
+  }
 }
 
 .header__logo {
@@ -304,19 +307,15 @@ p {
   width: 100%;
 
   > li {
-    // padding-right: 50px;
     display: flex;
     align-items: center;
     font-weight: 600;
-    // transition: background-color 2s ease-out 100ms;
-    // transition: 300ms ease-out 300ms;
 
     a {
       padding: 20px 40px;
       transition: 100ms ease-out;
     }
     &:hover a {
-      // transition: background-color 300ms ease-out 100ms;
       background: $primary;
       color: white;
     }
@@ -324,9 +323,6 @@ p {
     &:hover .dropdown_menu li {
       color: $text;
     }
-    // &:hover a:not(.dropdown) {
-    //   color: red;
-    // }
     @keyframes scaleZ {
       0% {
         opacity: 0;
@@ -567,7 +563,10 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: luminosity;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
   height: 100%;
   width: 100%;
   top: 0;
@@ -584,7 +583,10 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: luminosity;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
   height: 100%;
   width: 100%;
   top: 0;
@@ -717,7 +719,7 @@ footer {
   &__client-block {
     position: absolute;
     padding: 20px 36px;
-    background-color: #FFA07A;
+    background-color: #ffa07a;
     color: #fff;
     top: 200px;
     z-index: 1;
@@ -1093,8 +1095,9 @@ footer {
     color: $text;
     text-align: left;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     max-width: 501px;
+    line-height: 1.4;
   }
   .title {
     padding-bottom: 40px;
@@ -1116,14 +1119,16 @@ footer {
   }
   &__icon-quote {
     color: #ffc600;
-    // text-align: right;
-    // margin: -15px 0 40px;
   }
 }
 
 .parallax-block {
   background-color: #1d1729;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 110px 0px 110px 0px;
   --widgets-spacing: 20px;
   position: relative;
@@ -1136,7 +1141,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: luminosity;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition:
+      background 0.3s,
+      border-radius 0.3s,
+      opacity 0.3s;
     height: 100%;
     width: 100%;
     top: 0;
@@ -1153,7 +1161,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: luminosity;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition:
+      background 0.3s,
+      border-radius 0.3s,
+      opacity 0.3s;
     height: 100%;
     width: 100%;
     top: 0;
@@ -1260,7 +1271,11 @@ footer {
 .breadcrumbs {
   padding-top: 90px;
   background-color: #1d1729;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   --widgets-spacing: 20px;
   position: relative;
   overflow: hidden;
@@ -1310,7 +1325,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: luminosity;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition:
+      background 0.3s,
+      border-radius 0.3s,
+      opacity 0.3s;
     height: 100%;
     width: 100%;
     top: 0;
@@ -1328,7 +1346,7 @@ footer {
     transform: auto;
     height: 212px;
     opacity: 0.5;
-    background-image: linear-gradient(0deg, #FF8C00 0%, #a974fa 100%);
+    background-image: linear-gradient(0deg, #ff8c00 0%, #a974fa 100%);
     clip-path: polygon(100% 0, 100% 100%, 0 0%);
     transform-origin: unset;
     transform: unset;
@@ -1451,7 +1469,7 @@ footer {
     }
   }
   &__circle {
-    background-image: -webkit-linear-gradient(0deg, #FF8C00 0%, #FFA07A 100%);
+    background-image: -webkit-linear-gradient(0deg, #ff8c00 0%, #ffa07a 100%);
     border-radius: 50%;
     box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
     min-width: 91px;
@@ -1539,8 +1557,12 @@ footer {
   background-color: #1d1729;
   border-style: solid;
   border-width: 0px 0px 0px 10px;
-  border-color: #FFA07A;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  border-color: #ffa07a;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 70px 100px 70px 100px;
   max-width: 1290px;
   margin: 0 auto;
@@ -1590,7 +1612,7 @@ footer {
     max-width: 460px;
     padding: 0px 0px 0px 20px;
     background-color: transparent;
-    background-image: linear-gradient(0deg, #FF8C00 0%, #FFA07A 100%);
+    background-image: linear-gradient(0deg, #ff8c00 0%, #ffa07a 100%);
   }
 
   &__image {
@@ -1795,7 +1817,14 @@ footer {
     margin-top: 70px;
   }
   &__member {
+    &-carlos {
+      img {
+        max-width: 550px;
+      }
+      margin-bottom: 30px;
+    }
     img {
+      max-width: 550px;
       width: 100%;
     }
   }
@@ -1816,10 +1845,6 @@ footer {
     line-height: 1.4;
   }
 }
-
-// mob-menu
-
-// @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
 @mixin sp-layout {
   @media screen and (max-width: 750px) {
