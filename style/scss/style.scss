@@ -749,6 +749,37 @@ footer {
     }
   }
 
+  .logo-slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    &__title {
+      text-align: center;
+      margin: 150px 0 50px 0;
+    }
+  }
+  
+  .logo-slider__wrapper {
+    display: inline-block;
+    animation: slide 15s linear infinite;
+  }
+  
+  .logo-slider__block {
+    display: inline-block;
+  }
+  
+  .logo-slider img {
+    width: 100px;  /* Adjust to your preference */
+    height: auto;
+    vertical-align: middle;
+    margin: 0 63px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
   &__images {
     display: flex;
     justify-content: space-between;
@@ -2109,3 +2140,8 @@ footer {
     }
   }
 }
+
+
+
+
+
