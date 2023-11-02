@@ -129,9 +129,6 @@
         slide.addEventListener("touchstart", function (e) {
           startX = e.touches[0].clientX;
         });
-        // slide.addEventListener("touchstart", function (e) {
-        //   startX = e.touches[0].clientX;
-        // });
         slide.addEventListener("touchend", function (e) {
           endX = e.changedTouches[0].clientX;
 
@@ -294,7 +291,7 @@
     startAutoSlide() {
       this.autoSlideInterval = setInterval(() => {
         this.navigate("next");
-      }, 1000);
+      }, 2000);
     }
     stopAutoSlide() {
       clearInterval(this.autoSlideInterval);

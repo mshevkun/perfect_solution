@@ -56,9 +56,16 @@ checkbox.addEventListener("change", function () {
 
 const servicesSection = document.querySelector("#services");
 const scrollToServicesButton = document.querySelector(".dropdown");
-scrollToServicesButton.addEventListener("click", () => {
-  servicesSection.scrollIntoView({ behavior: "smooth" });
-});
+if (servicesSection && scrollToServicesButton) {
+  scrollToServicesButton.addEventListener("click", () => {
+    servicesSection.scrollIntoView({ behavior: "smooth" });
+  });
+} else if (scrollToServicesButton) {
+  scrollToServicesButton.addEventListener("click", () => {
+    console.log(112);
+    window.location.href = "../../#services";
+  });
+}
 
 const dropdownMenuItems = Array.from(document.querySelectorAll(".dropdown_menu li"));
 dropdownMenuItems.forEach((x) => {

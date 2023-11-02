@@ -9,7 +9,6 @@
 
     <link rel="shortcut icon" href="img/faviconV2.ico" type="image/x-icon" />
 
-    
     <link href="style/css/bootstrap.min.css" rel="stylesheet" />
 
     <link
@@ -56,8 +55,8 @@
                     <p
                       class="header-consult-info__info_text hover-underline-animation"
                     >
-                      <a href="mailto:carloslazares.pcs@gmail.com"
-                        >carloslazares.pcs@gmail.com</a
+                      <a href="mailto:Tech@perfectcomputersolutions.com" aria-label="Email Us"></a>
+                        Tech@perfectcomputersolutions.com</a
                       >
                     </p>
                   </div>
@@ -69,7 +68,7 @@
                       aria-hidden="true"
                     ></i>
                     <p class="header-consult-info__info_text">
-                      Mon - Sat: 8.00 am - 7.00 pm
+                      Mon - Sun: 8.00 am - 9.00 pm
                     </p>
                   </div>
                 </div>
@@ -78,19 +77,17 @@
                 class="header__social-networks col-3 d-flex justify-content-center align-items-center"
               >
                 <a
-                  href="tel:+18452558000"
-                  class="header-social-network d-flex justify-content-center align-items-center"
+                  href="tel:+18452558000" aria-label="Call us at +1 845-255-8000" class="header-social-network d-flex justify-content-center align-items-center"
                 >
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </a>
                 <a
-                  href="mailto:carloslazares.pcs@gmail.com"
-                  class="header-social-network d-flex justify-content-center align-items-center"
-                >
+                  href="mailto:Tech@perfectcomputersolutions.com" aria-label="Email Us" class="header-social-network d-flex justify-content-center align-items-center">
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </a>
                 <a
-                  href="https://www.google.com/maps/place/22+N+Oakwood+Terrace,+New+Paltz,+NY+12561"
+                  href="https://maps.app.goo.gl/YbbJCkRUzC55184Z9" aria-label="Find us on the map"
+                  target="_blank"
                   class="header-social-network d-flex justify-content-center align-items-center"
                 >
                   <i class="fa fa-map-o" aria-hidden="true"></i>
@@ -109,12 +106,15 @@
                         <li class="dropdown_item-1">
                           <a
                             href="https://www.orangesoftinternational.com/Home/Clinical"
+                            target="_blank"
                             >HIPPA E-Forms</a
                           >
                         </li>
                         <li class="dropdown_item-2">
-                          <a href="https://www.hudsonvalleypos.com/"
-                            >POS for Restaurants</a
+                          <a
+                            href="https://www.hudsonvalleypos.com/"
+                            target="_blank"
+                            >POS for Restaurants & Liquor Stores</a
                           >
                         </li>
                         <li class="dropdown_item-3">
@@ -155,7 +155,7 @@
               <div
                 class="col-4 col-xl-3 header-bottom-phone-contact d-flex align-items-center"
               >
-                <a href="tel:+18452558000">
+                <a href="tel:+18452558000" aria-label="Call us at +1 845-255-8000">
                   <div class="header-bottom__icon icon-wrapper">
                     <img src="img/phone-message.png" alt="Сall icon" />
                   </div>
@@ -166,7 +166,7 @@
                   <p
                     class="header-bottom__content_num hover-underline-animation"
                   >
-                    <a href="tel:+18452558000">+1 (845) 255-8000</a>
+                    <a href="tel:+18452558000" aria-label="Call us at +1 845-255-8000">(845) 255-8000</a>
                   </p>
                 </div>
               </div>
@@ -237,11 +237,16 @@
           <div class="slides">
             <div class="slide slide--current">
               <div class="slide__img-wrapper">
-                <img
-                  src="img/slider-img/slider3.png"
-                  class="slide__img"
-                  alt=""
-                />
+                <picture class="slide__img">
+                  <source
+                    srcset="img/slider-img/slider3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/slider-img/slider3.png"
+                    alt="Description of the image"
+                  />
+                </picture>
               </div>
               <h2 class="slide__title">Experience the best IT Solutions</h2>
               <p class="slide__desc">
@@ -261,11 +266,16 @@
             </div>
             <div class="slide">
               <div class="slide__img-wrapper">
-                <img
-                  src="img/slider-img/slider1.png"
-                  class="slide__img"
-                  alt=""
-                />
+                <picture class="slide__img">
+                  <source
+                    srcset="img/slider-img/slider1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/slider-img/slider1.png"
+                    alt="Description of the image"
+                  />
+                </picture>
               </div>
               <h2 class="slide__title">Experience the best IT Solutions</h2>
               <p class="slide__desc">
@@ -285,11 +295,16 @@
             </div>
             <div class="slide">
               <div class="slide__img-wrapper">
-                <img
-                  src="img/slider-img/slider2.png"
-                  class="slide__img"
-                  alt=""
-                />
+                <picture class="slide__img">
+                  <source
+                    srcset="img/slider-img/slider2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/slider-img/slider2.png"
+                    alt="Description of the image"
+                  />
+                </picture>
               </div>
               <h2 class="slide__title">Experience the best IT Solutions</h2>
               <p class="slide__desc">
@@ -311,11 +326,13 @@
           <nav class="slidenav">
             <button
               class="slidenav__item slidenav__item--prev icon-wrapper icon-slider-button"
+              aria-label="Go to previous slide"
             >
               <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
             </button>
             <button
               class="slidenav__item slidenav__item--next icon-wrapper icon-slider-button"
+              aria-label="Go to next slide"
             >
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </button>
@@ -457,6 +474,7 @@
             <div class="card-item">
               <a
                 href="https://www.orangesoftinternational.com/Home/Clinical"
+                target="_blank"
                 class="card-layer"
               ></a>
               <img
@@ -476,7 +494,11 @@
           </div>
           <div class="col-xl-3 col-md-6 services__card card-block">
             <div class="card-item">
-              <a href="https://www.hudsonvalleypos.com/" class="card-layer"></a>
+              <a
+                href="https://www.hudsonvalleypos.com/"
+                target="_blank"
+                class="card-layer"
+              ></a>
               <img
                 src="./img/restaurant.png"
                 class="services__card-image"
@@ -487,7 +509,7 @@
                   <img src="./img/smartphone1.png" alt="" />
                 </div>
                 <div class="services__card-title">
-                  <p>POS for Restaurants</p>
+                  <p>POS for Restaurants & Liquor Stores</p>
                 </div>
               </div>
             </div>
@@ -496,7 +518,7 @@
             <div class="card-item">
               <a href="services/remote_admin_service/" class="card-layer"></a>
               <img
-                src="./img/administration-service.png"
+                src="./img/administration-service.jpg"
                 class="services__card-image"
                 alt="services card image"
               />
@@ -534,7 +556,7 @@
             <div class="card-item">
               <a href="services/onsite_service/" class="card-layer"></a>
               <img
-                src="./img/man-is-writing-e-mail.jpg"
+                src="./img/onsite_service.jpg"
                 class="services__card-image"
                 alt="services card image"
               />
@@ -671,45 +693,25 @@
               </div>
               <div class="reviews__info">
                 <div class="reviews__client-image">
-                  <img src="img/reviews/testimonial-2.jpg" alt="" />
-                </div>
-                <div class="reviews__name-job">
-                  <p class="slider-item__name">Mike Hardson</p>
-                  <p class="slider-item__job">Senior Designer</p>
-                </div>
-              </div>
-              <p class="reviews__item-text">
-                PCS stands out as an exemplary IT company, consistently delivering
-                top-notch software. Their gifted developers understand what
-                businesses need. If you're aiming for premier IT solutions, look
-                no further than PCS.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="reviews__each">
-              <div class="slider-item__icon-quote">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </div>
-              <div class="reviews__info">
-                <div class="reviews__client-image">
                   <img src="img/reviews/testimonial-1.jpg" alt="" />
                 </div>
                 <div class="reviews__name-job">
-                  <p class="slider-item__name">Peek Thakul</p>
+                  <p class="slider-item__name">John</p>
                   <p class="slider-item__job">IT entrepreneur</p>
                 </div>
               </div>
               <p class="reviews__item-text">
-                Choosing Perfect Computer Solutions has been one of our best
-                decisions. With a team that understands the nuances of quality
-                software development, they've consistently met our needs.
-                They're not just another IT company, they're partners in
-                success.
+                Carlos was great. Had a hardware issue causing problems starting
+                my pc and so I brought it in. He figured out the problem and had
+                my pc ready to go in no time. He thoroughly explained the
+                problem and how it may have occurred. Carlos was upfront about
+                the cost of repair and it was well below what I thought it would
+                be. Given how quick and hassle free my experience was I couldn't
+                be happier. Especially during these times I think having a
+                trusted computer technician is up there with having a reliable
+                car mechanic. Hope my computer doesn't have anymore issues but
+                it is good to know that if there are any further problems down
+                the line PCS can help me out again!
               </p>
             </div>
           </div>
@@ -727,15 +729,50 @@
                   <img src="img/reviews/testimonial-3.jpg" alt="" />
                 </div>
                 <div class="reviews__name-job">
-                  <p class="slider-item__name">Alisa Hardson</p>
+                  <p class="slider-item__name">Andrea Kost</p>
                   <p class="slider-item__job">HR specialist</p>
                 </div>
               </div>
               <p class="reviews__item-text">
-                Every interaction with Perfect Computer Solutions has been a testament to their
-                expertise. Their solutions are always tailored to our needs, and
-                their developers are truly the best in the business. If quality
-                IT solutions are what you're after, don't look past Perfect Computer Solutions.
+                Imagine my horror as a grad student coming home one week before
+                classes starting and my computer not turning on. I called PCS in
+                an attempt to avoid a long trek to Danbury Apple. They were
+                super friendly and helpful. The repair was complicated and time
+                consuming and we ran into a thousand hiccups, which would have
+                cost me way more stress and money elsewhere. Carlos worked as
+                hard as he could to get my computer done as quickly as he could.
+                When I started classes and the job still wasn't done (due
+                entirely to crappy luck) he lent me a computer to do my work and
+                hold me over. These guys really go above and beyond for their
+                customers and I would recommend them in a heartbeat.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="reviews__each">
+              <div class="slider-item__icon-quote">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__client-image">
+                  <img src="img/reviews/testimonial-2.jpg" alt="" />
+                </div>
+                <div class="reviews__name-job">
+                  <p class="slider-item__name">Andrew Nutt</p>
+                  <p class="slider-item__job">Senior Designer</p>
+                </div>
+              </div>
+              <p class="reviews__item-text">
+                Computer tech Carlos came to my home to service my PC. He
+                rendered fast and courteous service, exhibiting the utmost
+                professionalism. He came fully equipped with all the right tools
+                (I work in IT so I'm very meticulous when it comes to
+                preparation), honed in on my issues quickly, and fixed them with
+                ease. He was very accomodating and friendly. Highly recommend.
               </p>
             </div>
           </div>
@@ -749,7 +786,7 @@
       <div class="parallax-block__geometry"></div>
       <div class="row container parallax-block__content">
         <div class="col-12 col-md-6 col-xl-5">
-          <a href="tel:+18452558000">
+          <a href="tel:+18452558000" aria-label="Call us at +1 845-255-8000">
             <div
               class="result-num__contact-button header-bottom__icon icon-wrapper"
             >
@@ -784,7 +821,8 @@
               <img src="img/logo.svg" class="footer-logo__image" alt="" />
             </div>
             <p class="footer-text">
-              With a passion for innovation, we constantly embrace challenges and set new standards in the IT sector
+              With a passion for innovation, we constantly embrace challenges
+              and set new standards in the IT sector
             </p>
           </div>
           <div class="col-12 col-md-6 col-lg-2 footer-block">
@@ -826,7 +864,7 @@
                   ></i>
                   <span
                     class="footer-contacts__list-item-text hover-underline-animation"
-                    ><a href="tel:+18452558000">+1 (845) 255-8000</a></span
+                    ><a href="tel:+18452558000" aria-label="Call us at +1 845-255-8000">(845) 255-8000</a></span
                   >
                 </li>
                 <li class="footer-contacts__list-item">
@@ -835,23 +873,41 @@
                     aria-hidden="true"
                   ></i>
                   <span class="hover-underline-animation"
-                    ><a href="mailto:carloslazares.pcs@gmail.com"
-                      >carloslazares.pcs@gmail.com</a
+                    ><a href="mailto:Tech@perfectcomputersolutions.com" aria-label="Email Us">Tech@perfectcomputersolutions.com</a
                     ></span
                   >
                 </li>
                 <li class="footer-contacts__list-item">
-                  <i
-                    class="fa fa-map-marker footer-contacts__list-item-icon"
-                    aria-hidden="true"
-                  ></i>
-                  <span class="hover-underline-animation">
-                    <a
-                      href="https://www.google.com/maps/place/22+N+Oakwood+Terrace,+New+Paltz,+NY+12561"
-                    >
-                      22 N Oakwood Terrace, New Paltz, NY. USA
-                    </a>
-                  </span>
+                  <div>
+                    <i
+                      class="fa fa-map-marker footer-contacts__list-item-icon"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="footer-contacts__address-block">
+                    <span class="hover-underline-animation">
+                      <a
+                        href="https://maps.app.goo.gl/YbbJCkRUzC55184Z9" aria-label="Find us on the map"
+                        target="_blank"
+                      >
+                        22 N Oakwood Terrace, New Paltz, NY
+                      </a>
+                    </span>
+                    <span class="hover-underline-animation">
+                      <a
+                        href="https://maps.app.goo.gl/miFE7cvM7Qn2C8QY9" aria-label="Find us on the map"
+                        target="_blank"
+                        >112 Fletcher Dr N, Newburgh, NY 12550</a
+                      >
+                    </span>
+                    <span class="hover-underline-animation">
+                      <a
+                        href="https://maps.app.goo.gl/T7nyMhj6M8ZLMpyf7" aria-label="Find us on the map"
+                        target="_blank"
+                        >515 Madison Ave, New York, NY 10022
+                      </a>
+                    </span>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -900,7 +956,7 @@
               <div class="footer-col-hours-wrapper__week-day">
                 Saturday - Sunday
               </div>
-              <div class="footer-col-hours-wrapper__time">Closed</div>
+              <div class="footer-col-hours-wrapper__time">8AM - 9PM</div>
             </div>
           </div>
         </div>
